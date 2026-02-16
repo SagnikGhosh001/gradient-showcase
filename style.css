@@ -10,13 +10,15 @@
 }
 
 .logo {
+  display: block;
   color: #eae6db;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.5em 0em;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 2em;
-
+  text-decoration: none;
+  cursor: pointer;
   border-bottom: 2px solid #eae6db;
 }
 
