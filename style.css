@@ -1,0 +1,299 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.side-bar {
+  width: 20%;
+  background: #1e1e2f;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 2em 0;
+  gap: 15px;
+}
+
+.action {
+  font-family: monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 90px;
+
+  font-size: 2em;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+
+  border-radius: 12px;
+  background: #2c2c3e;
+}
+
+.content {
+  height: 100vh;
+}
+
+.section {
+  display: none;
+  height: 100vh;
+  width: 80%;
+}
+
+#home {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+
+  background: linear-gradient(135deg, #1e1e2f, #023047);
+}
+
+#home .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  text-align: center;
+  color: white;
+}
+
+#home .content h1 {
+  font-size: 5rem;
+  font-style: italic;
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(255, 183, 3, 0.4);
+}
+
+#home .content p {
+  font-size: 2rem;
+  font-style: italic;
+  opacity: 0.9;
+
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.section:target {
+  display: block;
+}
+
+.section:target~#home {
+  display: none;
+}
+
+#g1:target .content {
+  background: repeating-linear-gradient(0deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+}
+
+.g1:hover {
+  background: repeating-linear-gradient(0deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+  color: white;
+}
+
+#g2:target .content {
+  background: repeating-linear-gradient(70deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+}
+
+.g2:hover {
+  background: repeating-linear-gradient(70deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+  color: white;
+}
+
+
+#g3:target .content {
+  background: repeating-linear-gradient(45deg,
+      #ffb703 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px),
+    repeating-linear-gradient(-45deg,
+      #ffb703 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px);
+}
+
+.g3:hover {
+  background: repeating-linear-gradient(45deg,
+      #ffb703 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px),
+    repeating-linear-gradient(-45deg,
+      #ffb703 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px);
+  color: white;
+}
+
+
+#g4:target .content {
+  background:
+    repeating-linear-gradient(45deg,
+      #ffb703 0px,
+      #ffb703 10px,
+      transparent 10px,
+      transparent 40px),
+    repeating-linear-gradient(-45deg,
+      #023047 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px),
+    radial-gradient(circle at center, #000000, #e5e5e5);
+}
+
+
+.g4:hover {
+  background:
+    repeating-linear-gradient(45deg,
+      #ffb703 0px,
+      #ffb703 10px,
+      transparent 10px,
+      transparent 40px),
+    repeating-linear-gradient(-45deg,
+      #023047 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px),
+    radial-gradient(circle at center, #000000, #e5e5e5);
+  color: white;
+}
+
+#g5:target .content {
+  background:
+    radial-gradient(#000 8px, #f5f5f5 1px);
+  background-size: 40px 40px;
+
+}
+
+
+.g5:hover {
+  background:
+    radial-gradient(#000 5px, #f5f5f5 1px);
+  background-size: 40px 40px;
+  color: black;
+}
+
+#g6:target .content {
+  background:
+    radial-gradient(#000 8px, #f5f5f5 15px);
+  background-size: 40px 40px;
+}
+
+
+.g6:hover {
+  background:
+    radial-gradient(#000 5px, #f5f5f5 15px);
+  background-size: 40px 40px;
+  color: black;
+}
+
+#g7:target .content {
+
+  background:
+    linear-gradient(90deg, #023047 25%, transparent 25%),
+    linear-gradient(200deg, #023047 25%, transparent 25%);
+  background-size: 40px 40px;
+}
+
+
+.g7:hover {
+  background:
+    linear-gradient(90deg, #023047 25%, transparent 25%),
+    linear-gradient(200deg, #023047 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+#g8:target .content {
+
+  background:
+    linear-gradient(45deg, #023047 25%, transparent 25%),
+    linear-gradient(-45deg, #023047 25%, transparent 25%),
+    linear-gradient(135deg, #023047 25%, transparent 25%),
+    linear-gradient(-135deg, #023047 25%, transparent 25%);
+  background-size: 40px 40px;
+}
+
+
+.g8:hover {
+  background:
+    linear-gradient(45deg, #023047 25%, transparent 25%),
+    linear-gradient(-45deg, #023047 25%, transparent 25%),
+    linear-gradient(135deg, #023047 25%, transparent 25%),
+    linear-gradient(-135deg, #023047 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+#g9:target .content {
+
+  background:
+    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #023047 25%, transparent 25%),
+    linear-gradient(45deg, #023047 25%, transparent 25%);
+  background-size: 40px 40px;
+}
+
+
+.g9:hover {
+  background:
+    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #023047 25%, transparent 25%),
+    linear-gradient(45deg, #023047 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+#g10:target .content {
+
+  background:
+    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #023047 25%, transparent 25%),
+    linear-gradient(45deg, #023047 25%, transparent 25%),
+    linear-gradient(90deg, #023047 25%, transparent 25%) -20px 0;
+  background-size: 80px 80px;
+}
+
+
+.g10:hover {
+  background:
+    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #023047 25%, transparent 25%),
+    linear-gradient(45deg, #023047 25%, transparent 25%),
+    linear-gradient(90deg, #023047 25%, transparent 25%) -20px 0;
+  background-color: white;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  background-size: 80px 80px;
+}
