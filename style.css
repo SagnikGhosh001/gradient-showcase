@@ -9,11 +9,25 @@
   display: flex;
 }
 
+.logo {
+  color: #eae6db;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 2em;
+
+  border-bottom: 2px solid #eae6db;
+}
+
+
 .side-bar {
   width: 20%;
   background: #1e1e2f;
   height: 100vh;
   overflow-y: auto;
+  padding-right: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .actions {
@@ -58,8 +72,6 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 20%;
-
   background: linear-gradient(135deg, #1e1e2f, #023047);
 }
 
@@ -67,6 +79,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 3em;
   text-align: center;
   color: white;
