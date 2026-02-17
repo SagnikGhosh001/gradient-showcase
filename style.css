@@ -113,9 +113,8 @@
   display: none;
 }
 
-#g1:target .content {
-  background:
-    linear-gradient(45deg,
+:root {
+  --g1: linear-gradient(45deg,
       transparent 49.8%,
       #023047 50%,
       transparent 50.2%),
@@ -135,30 +134,69 @@
       #ff9a9e 35%,
       #f5805f 70%,
       #c8553d 100%);
+
+  --g2: radial-gradient(circle at 50px 50px, rgb(0, 94, 255), rgb(157, 149, 149));
+  --g3: linear-gradient(45deg, rgb(0, 0, 0), peachpuff),
+    repeating-linear-gradient(-45deg,
+      #ffb703 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px);
+  --g4: repeating-linear-gradient(45deg,
+      #ffb703 0px,
+      #ffb703 10px,
+      transparent 10px,
+      transparent 40px),
+    repeating-linear-gradient(-45deg,
+      #023047 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px),
+    radial-gradient(circle at center, #000000, #e5e5e5);
+
+  --g5: radial-gradient(#000 8px, #f5f5f5 1px);
+  --g6: radial-gradient(#000 8px, #f5f5f5 15px);
+  --g7: linear-gradient(90deg, #023047 25%, transparent 25%),
+    linear-gradient(200deg, #023047 25%, transparent 25%);
+  --g8: linear-gradient(45deg, #023047 25%, transparent 25%),
+    linear-gradient(-45deg, #023047 25%, transparent 25%),
+    linear-gradient(135deg, #023047 25%, transparent 25%),
+    linear-gradient(-135deg, #023047 25%, transparent 25%);
+  --g9: linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #023047 25%, transparent 25%),
+    linear-gradient(45deg, #023047 25%, transparent 25%);
+  --g10: repeating-linear-gradient(70deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+  --g11: repeating-linear-gradient(0deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+
+  --g12: linear-gradient(135deg, #023047 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, #023047 25%, transparent 25%) 30px 0,
+    linear-gradient(315deg, #023047 25%, transparent 25%) -10px 0,
+    linear-gradient(45deg, #023047 25%, transparent 25%) 30px 0,
+    linear-gradient(90deg, #023047 25%, transparent 25%);
+  --g13: linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #023047 25%, transparent 25%),
+    linear-gradient(45deg, #023047 25%, transparent 25%),
+    linear-gradient(90deg, #023047 25%, transparent 25%) -20px 0;
+  --g14: repeating-linear-gradient(45deg,
+      #ffb703 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px),
+    repeating-linear-gradient(-45deg,
+      #ffb703 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px);
+}
+
+#g1:target .content {
+  background: var(--g1);
 }
 
 .g1:hover {
-  background:
-    linear-gradient(45deg,
-      transparent 49.8%,
-      #023047 50%,
-      transparent 50.2%),
-    linear-gradient(-45deg,
-      transparent 49.8%,
-      #023047 50%,
-      transparent 50.2%),
-    linear-gradient(90deg,
-      transparent 49.8%,
-      #023047 50%,
-      transparent 50.2%),
-    linear-gradient(0deg,
-      transparent 49.8%,
-      #023047 50%,
-      transparent 50.2%),
-    radial-gradient(#ffd6e0 0%,
-      #ff9a9e 35%,
-      #f5805f 70%,
-      #c8553d 100%);
+  background: var(--g1);
 
   background-color: white;
   color: white;
@@ -166,133 +204,72 @@
 }
 
 #g2:target .content {
-
-  background:
-    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(315deg, #023047 25%, transparent 25%),
-    linear-gradient(45deg, #023047 25%, transparent 25%),
-    linear-gradient(90deg, #023047 25%, transparent 25%) -20px 0;
-  background-size: 80px 80px;
+  background: var(--g2);
 }
 
 
 .g2:hover {
-  background:
-    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(315deg, #023047 25%, transparent 25%),
-    linear-gradient(45deg, #023047 25%, transparent 25%),
-    linear-gradient(90deg, #023047 25%, transparent 25%) -20px 0;
+  background: var(--g2);
   background-color: white;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
-  background-size: 80px 80px;
 }
 
 
 #g3:target .content {
-  background: repeating-linear-gradient(45deg,
-      #ffb703 0px,
-      #023047 10px,
-      transparent 10px,
-      transparent 40px),
-    repeating-linear-gradient(-45deg,
-      #ffb703 0px,
-      #023047 10px,
-      transparent 10px,
-      transparent 40px);
+  background: var(--g3)
 }
 
 .g3:hover {
-  background: repeating-linear-gradient(45deg,
-      #ffb703 0px,
-      #023047 10px,
-      transparent 10px,
-      transparent 40px),
-    repeating-linear-gradient(-45deg,
-      #ffb703 0px,
-      #023047 10px,
-      transparent 10px,
-      transparent 40px);
+  background: var(--g3);
   color: white;
 }
 
 
 #g4:target .content {
-  background:
-    repeating-linear-gradient(45deg,
-      #ffb703 0px,
-      #ffb703 10px,
-      transparent 10px,
-      transparent 40px),
-    repeating-linear-gradient(-45deg,
-      #023047 0px,
-      #023047 10px,
-      transparent 10px,
-      transparent 40px),
-    radial-gradient(circle at center, #000000, #e5e5e5);
+  background: var(--g4)
 }
 
 
 .g4:hover {
-  background:
-    repeating-linear-gradient(45deg,
-      #ffb703 0px,
-      #ffb703 10px,
-      transparent 10px,
-      transparent 40px),
-    repeating-linear-gradient(-45deg,
-      #023047 0px,
-      #023047 10px,
-      transparent 10px,
-      transparent 40px),
-    radial-gradient(circle at center, #000000, #e5e5e5);
+  background: var(--g4);
   color: white;
 }
 
 #g5:target .content {
-  background:
-    radial-gradient(#000 8px, #f5f5f5 1px);
+  background: var(--g5);
   background-size: 40px 40px;
 
 }
 
 
 .g5:hover {
-  background:
-    radial-gradient(#000 5px, #f5f5f5 1px);
+  background: var(--g5);
   background-size: 40px 40px;
   color: black;
 }
 
 #g6:target .content {
-  background:
-    radial-gradient(#000 8px, #f5f5f5 15px);
+  background: var(--g6);
   background-size: 40px 40px;
 }
 
 
 .g6:hover {
-  background:
-    radial-gradient(#000 5px, #f5f5f5 15px);
+  background: var(--g6);
   background-size: 40px 40px;
-  color: black;
+  color: black
 }
 
 #g7:target .content {
 
-  background:
-    linear-gradient(90deg, #023047 25%, transparent 25%),
-    linear-gradient(200deg, #023047 25%, transparent 25%);
+  background: var(--g7);
   background-size: 40px 40px;
 }
 
 
 .g7:hover {
-  background:
-    linear-gradient(90deg, #023047 25%, transparent 25%),
-    linear-gradient(200deg, #023047 25%, transparent 25%);
+  background: var(--g7);
   background-size: 40px 40px;
   background-color: white;
   color: white;
@@ -300,22 +277,13 @@
 }
 
 #g8:target .content {
-
-  background:
-    linear-gradient(45deg, #023047 25%, transparent 25%),
-    linear-gradient(-45deg, #023047 25%, transparent 25%),
-    linear-gradient(135deg, #023047 25%, transparent 25%),
-    linear-gradient(-135deg, #023047 25%, transparent 25%);
+  background: var(--g8);
   background-size: 40px 40px;
 }
 
 
 .g8:hover {
-  background:
-    linear-gradient(45deg, #023047 25%, transparent 25%),
-    linear-gradient(-45deg, #023047 25%, transparent 25%),
-    linear-gradient(135deg, #023047 25%, transparent 25%),
-    linear-gradient(-135deg, #023047 25%, transparent 25%);
+  background: var(--g8);
   background-size: 40px 40px;
   background-color: white;
   color: white;
@@ -324,22 +292,13 @@
 
 
 #g9:target .content {
-
-  background:
-    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(315deg, #023047 25%, transparent 25%),
-    linear-gradient(45deg, #023047 25%, transparent 25%);
+  background: var(--g9);
   background-size: 40px 40px;
 }
 
 
 .g9:hover {
-  background:
-    linear-gradient(135deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(225deg, #023047 25%, transparent 25%) -20px 0,
-    linear-gradient(315deg, #023047 25%, transparent 25%),
-    linear-gradient(45deg, #023047 25%, transparent 25%);
+  background: var(--g9);
   background-size: 40px 40px;
   background-color: white;
   color: white;
@@ -347,20 +306,62 @@
 }
 
 #g10:target .content {
-  background: repeating-linear-gradient(70deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+  background: var(--g10);
 }
 
 .g10:hover {
-  background: repeating-linear-gradient(70deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+  background: var(--g10);
   color: white;
 }
 
 
 #g11:target .content {
-  background: repeating-linear-gradient(0deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+  background: var(--g11);
 }
 
 .g11:hover {
-  background: repeating-linear-gradient(0deg, #c0392b, #c0392b 18px, #e74c3c 18px, #e74c3c 36px);
+  background: var(--g11);
   color: white;
+}
+
+#g12:target .content {
+
+  background: var(--g12);
+  background-size: 90px 90px;
+}
+
+
+.g12:hover {
+  background: var(--g12);
+  background-color: white;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  background-size: 90px 90px;
+}
+
+
+#g13:target .content {
+
+  background: var(--g13);
+  background-size: 90px 90px;
+}
+
+
+.g13:hover {
+  background: var(--g13);
+  background-color: white;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  background-size: 90px 90px;
+}
+
+#g14:target .content {
+  background: var(--g14);
+}
+
+
+.g14:hover {
+  background: var(--g14);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 }
