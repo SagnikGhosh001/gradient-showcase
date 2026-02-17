@@ -142,17 +142,7 @@
       #023047 10px,
       transparent 10px,
       transparent 40px);
-  --g4: repeating-linear-gradient(45deg,
-      #ffb703 0px,
-      #ffb703 10px,
-      transparent 10px,
-      transparent 40px),
-    repeating-linear-gradient(-45deg,
-      #023047 0px,
-      #023047 10px,
-      transparent 10px,
-      transparent 40px),
-    radial-gradient(circle at center, #000000, #e5e5e5);
+  --g4: radial-gradient(rgb(230, 124, 124) 10%, rgb(121, 107, 81) 50%);
 
   --g5: radial-gradient(#000 8px, #f5f5f5 1px);
   --g6: radial-gradient(#000 8px, #f5f5f5 15px);
@@ -189,6 +179,17 @@
       #023047 10px,
       transparent 10px,
       transparent 40px);
+  --g15: repeating-linear-gradient(45deg,
+      #ffb703 0px,
+      #ffb703 10px,
+      transparent 10px,
+      transparent 40px),
+    repeating-linear-gradient(-45deg,
+      #023047 0px,
+      #023047 10px,
+      transparent 10px,
+      transparent 40px),
+    radial-gradient(circle at center, #000000, #e5e5e5);
 }
 
 #g1:target .content {
@@ -227,19 +228,17 @@
 
 
 #g4:target .content {
-  background: var(--g4)
+  background: var(--g4);
 }
 
 
 .g4:hover {
   background: var(--g4);
-  color: white;
 }
 
 #g5:target .content {
   background: var(--g5);
   background-size: 40px 40px;
-
 }
 
 
@@ -359,9 +358,18 @@
   background: var(--g14);
 }
 
-
 .g14:hover {
   background: var(--g14);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+#g15:target .content {
+  background: var(--g15);
+}
+
+.g15:hover {
+  background: var(--g15);
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 }
